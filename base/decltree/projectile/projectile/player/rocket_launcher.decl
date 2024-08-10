@@ -6,6 +6,7 @@ declType( projectile ) {
 		fxDecl = "weapon/rocket_launcher/projectile";
 		notHitscanInfo = {
 			entityDef = "projectile_ent/ai/painelemental/lostsoul_linear";
+			carryoverThisProjDecl = true;
 			physicsProperties = {
 				actorClipRadius = 0.200000003;
 			}

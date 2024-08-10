@@ -1,0 +1,18 @@
+declType( projectile ) {
+	inherit = "projectile/player/rocket_launcher";
+	edit = {
+		fxDecl = "weapon/rocket_launcher/projectile_remote_array_side_explosion";
+		notHitscanInfo = {
+			launchMuzzleHoldFrames = 0;
+			entityDef = "projectile_ent/ai/painelemental/lostsoul_linear";
+			explodeSound = "play_explosive_array_explode";
+			altExplodeSound = "play_explosive_array_explode";
+			proximityFlare = {
+				enable = false;
+			}
+		}
+		damageDecl = "damage/firearm/rocket_launcher_detonate_explosive_array";
+		splashDamageDecl = "damage/firearm/rocket_launcher_detonate_explosive_array_splash";
+		altSplashDamageDecl = "damage/firearm/rocket_launcher_detonate_explosive_array_splash";
+	}
+}

@@ -1,0 +1,12 @@
+declType( projectile ) {
+	inherit = "projectile/player/rocket_launcher_detonate_explosive_array";
+	edit = {
+		notHitscanInfo = {
+			entityDef = "projectile_ent/ai/painelemental/lostsoul_linear";
+			explodeSound = "play_player_rocket_explosion_master";
+			proximityFlareActiveExplodeSound = "play_arcade_barell";
+		}
+		damageDecl = "damage/firearm/rocket_launcher_detonate_mastered";
+		altSplashDamageDecl = "damage/firearm/rocket_launcher_manual_detonate_shrapnel_splash";
+	}
+}
