@@ -1,0 +1,92 @@
+declType( projectile ) {
+	inherit = "projectile/player/rocket_launcher";
+	edit = {
+		fxDecl = "weapon/rocket_launcher/projectile_remote_array";
+		delayedProjectile = "projectile_ent/player/rocket_launcher_detonate_explosive_array_delayed_projectile";
+		delayedProjectileDelayMSMin = 100;
+		delayedProjectileDelayMSMax = 110;
+		delayedProjectileInheritUpgrades = false;
+		delayedProjectileOffsetEnables = {
+			num = 6;
+			item[0] = {
+				offset = {
+					x = 0;
+					y = 1;
+					z = 0;
+				}
+				launchAxis = {
+					x = 0;
+					y = 1;
+					z = 0;
+				}
+				enable = false;
+			}
+			item[1] = {
+				offset = {
+					x = 0;
+					y = -1;
+					z = 0;
+				}
+				launchAxis = {
+					x = 0;
+					y = -1;
+					z = 0;
+				}
+				enable = false;
+			}
+			item[2] = {
+				offset = {
+					x = -4;
+					y = -1.5;
+					z = 0;
+				}
+				launchAxis = {
+					x = 0;
+					y = 0;
+					z = 1;
+				}
+				enable = false;
+			}
+			item[3] = {
+				offset = {
+					x = 4;
+					y = -1.5;
+					z = 0;
+				}
+				launchAxis = {
+					x = 0;
+					y = 0;
+					z = 1;
+				}
+				enable = false;
+			}
+			item[4] = {
+				offset = {
+					x = -4;
+					y = 1.5;
+					z = 0;
+				}
+				launchAxis = {
+					x = 0;
+					y = 0;
+					z = 1;
+				}
+				enable = false;
+			}
+			item[5] = {
+				offset = {
+					x = 4;
+					y = 1.5;
+					z = 0;
+				}
+				launchAxis = {
+					x = 0;
+					y = 0;
+					z = 1;
+				}
+				enable = false;
+			}
+		}
+		delayedProjectileOnManualDetonationOnly = true;
+	}
+}
