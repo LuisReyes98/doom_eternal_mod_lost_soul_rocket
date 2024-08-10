@@ -1,0 +1,31 @@
+declType( projectile ) {
+	inherit = "projectile/base/rocket";
+	edit = {
+		fireSoundStart = "play_wpn_sp_rocket_launcher_fire";
+		impactEffectTableQuad = "impacteffect/projectiles/weapons/rocket_mp_quad";
+		fxDecl = "weapon/rocket_launcher/projectile";
+		notHitscanInfo = {
+			entityDef = "projectile_ent/ai/painelemental/lostsoul_linear";
+			physicsProperties = {
+				actorClipRadius = 0.200000003;
+			}
+			explodeSound = "play_player_rocket_explosion";
+			altExplodeSound = "play_player_rocket_remote_explo";
+			speed = {
+				defaultValue = 24;
+			}
+			clientAuthoritative = true;
+			grenadeInfo = {
+				inheritParentSpeed = true;
+				canDetonateWithAltTrigger = true;
+			}
+			proximityFlare = {
+				enable = true;
+				startSound = "play_proximity_flare";
+				minDurationMS = 150;
+				minDelayMS = 150;
+			}
+		}
+		altSplashDamageDecl = "damage/firearm/rocket_launcher_manual_detonate_splash";
+	}
+}
